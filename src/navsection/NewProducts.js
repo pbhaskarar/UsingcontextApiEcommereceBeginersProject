@@ -33,6 +33,7 @@ const NewProducts = () => {
       productPrice: Productprice,
       selectProduct,
     };
+    
     setProductData((prev) => [...prev, newProduct]);
     setProductName("");
     setProductPrice("");

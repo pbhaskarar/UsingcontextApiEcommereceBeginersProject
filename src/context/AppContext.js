@@ -21,13 +21,22 @@ const AppContext = ({children}) => {
     //   };
 
     const [cartItems,setCartItems] = useState([])
+
     const addToCart = (product) => {
-      setCartItems((prev) => [...prev, product]);
+      const localProduct = {...product, count: 1}
+      // console.log("addToCart__product: ", localProduct);
+
+
+      // get cartItems state
+      // 
+      setCartItems((prev) => [...prev, localProduct]);
+
+      
   
     };
   const cartItemsLength = cartItems.length;
   
-      console.log(cartItems);
+      // console.log(cartItems);
 
     const deleteHandle = (id) =>{
         const updatedProductData = productdata.filter((product) => product.id !== id );
