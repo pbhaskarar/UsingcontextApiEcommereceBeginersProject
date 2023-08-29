@@ -40,29 +40,14 @@ const NewProducts = () => {
     setSelectProduct("");
   };
 
-  // const deleteHandle = (id) => {
-  //   const deleteAlert = window.confirm("You Want to Delete");
-  //   if (deleteAlert) {
-  //     const updatedProductData = productdata.filter(
-  //       (product) => product.id !== id
-  //     );
-  //     setProductData(updatedProductData);
-  //   }
-  // };
-
-//   const addToCart = (product) => {
-//     setCartItems((prev) => [...prev, product]);
-
-//   };
-// console.log(cartItems.length)
-
-
 
 
   // store the data  in locxal storage in whn ever it changes
   useEffect(() => {
     localStorage.setItem("productdata", JSON.stringify(productdata));
   }, [productdata]);
+
+  
   return (
     <>
       <Container>

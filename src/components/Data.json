@@ -1,0 +1,285 @@
+{
+    "foodItems": [
+      {
+        "id": 1,
+        "name": "Eggs Benedict",
+        "category": "Breakfast",
+        "img": "https://example.com/eggs_benedict.jpg",
+        "description": "Classic breakfast dish with poached eggs, ham, and hollandaise sauce."
+      },
+      {
+        "id": 2,
+        "name": "Avocado Toast",
+        "category": "Breakfast",
+        "img": "https://example.com/avocado_toast.jpg",
+        "description": "Toasted bread topped with mashed avocado, lemon juice, and seasonings."
+      },
+      {
+        "id": 3,
+        "name": "Pancakes",
+        "category": "Breakfast",
+        "img": "https://example.com/pancakes.jpg",
+        "description": "Fluffy and delicious pancakes served with maple syrup and butter."
+      },
+      {
+        "id": 4,
+        "name": "Chicken Caesar Salad",
+        "category": "Lunch",
+        "img": "https://example.com/chicken_caesar_salad.jpg",
+        "description": "Fresh romaine lettuce, grilled chicken, Parmesan cheese, and Caesar dressing."
+      },
+      {
+        "id": 5,
+        "name": "Margherita Pizza",
+        "category": "Lunch",
+        "img": "https://example.com/margherita_pizza.jpg",
+        "description": "Traditional Italian pizza topped with tomato sauce, mozzarella cheese, and basil leaves."
+      },
+      {
+        "id": 6,
+        "name": "Sushi Rolls",
+        "category": "Lunch",
+        "img": "https://example.com/sushi_rolls.jpg",
+        "description": "Assortment of sushi rolls with various fillings, such as salmon, tuna, and avocado."
+      },
+      {
+        "id": 7,
+        "name": "Grilled Steak",
+        "category": "Dinner",
+        "img": "https://example.com/grilled_steak.jpg",
+        "description": "Juicy and tender grilled steak seasoned with herbs and spices."
+      },
+      {
+        "id": 8,
+        "name": "Baked Salmon",
+        "category": "Dinner",
+        "img": "https://example.com/baked_salmon.jpg",
+        "description": "Fresh salmon fillet baked with lemon, herbs, and olive oil."
+      },
+      {
+        "id": 9,
+        "name": "Vegetable Stir-Fry",
+        "category": "Dinner",
+        "img": "https://example.com/vegetable_stir_fry.jpg",
+        "description": "Colorful mix of stir-fried vegetables with soy sauce and garlic."
+      },
+      {
+        "id": 10,
+        "name": "Fruit Salad",
+        "category": "Evening Snacks",
+        "img": "https://example.com/fruit_salad.jpg",
+        "description": "Refreshing combination of various fresh fruits, such as watermelon, berries, and citrus slices."
+      },
+      {
+        "id": 11,
+        "name": "Cheese and Crackers",
+        "category": "Evening Snacks",
+        "img": "https://example.com/cheese_crackers.jpg",
+        "description": "Assorted cheese varieties served with crispy crackers."
+      },
+      {
+        "id": 12,
+        "name": "Guacamole and Chips",
+        "category": "Evening Snacks",
+        "img": "https://example.com/guacamole_chips.jpg",
+        "description": "Homemade guacamole dip with tortilla chips for dipping."
+      },
+      {
+        "id": 13,
+        "name": "French Toast",
+        "category": "Breakfast",
+        "img": "https://example.com/french_toast.jpg",
+        "description": "Slices of bread soaked in a mixture of eggs, milk, and cinnamon, then fried until golden brown."
+      },
+      {
+        "id": 14,
+        "name": "Greek Salad",
+        "category": "Lunch",
+        "img": "https://example.com/greek_salad.jpg",
+        "description": "Crisp lettuce, tomatoes, cucumbers, olives, feta cheese, and Greek dressing."
+      },
+      {
+        "id": 15,
+        "name": "Spaghetti Bolognese",
+        "category": "Lunch",
+        "img": "https://example.com/spaghetti_bolognese.jpg",
+        "description": "Pasta dish with a rich meat sauce, typically made with ground beef, tomatoes, and herbs."
+      },
+      {
+        "id": 16,
+        "name": "Fish and Chips",
+        "category": "Lunch",
+        "img": "https://example.com/fish_chips.jpg",
+        "description": "Battered and fried fish fillets served with thick-cut potato fries."
+      },
+      {
+        "id": 17,
+        "name": "Roast Chicken",
+        "category": "Dinner",
+        "img": "https://example.com/roast_chicken.jpg",
+        "description": "Whole chicken roasted to perfection with herbs, spices, and crispy skin."
+      },
+      {
+        "id": 18,
+        "name": "Lasagna",
+        "category": "Dinner",
+        "img": "https://example.com/lasagna.jpg",
+        "description": "Layers of pasta, meat sauce, and cheese, baked until bubbly and golden."
+      },
+      {
+        "id": 19,
+        "name": "Grilled Vegetables",
+        "category": "Dinner",
+        "img": "https://example.com/grilled_vegetables.jpg",
+        "description": "Assortment of grilled vegetables, such as bell peppers, zucchini, and eggplant."
+      },
+      {
+        "id": 20,
+        "name": "Nachos",
+        "category": "Evening Snacks",
+        "img": "https://example.com/nachos.jpg",
+        "description": "Crispy tortilla chips topped with melted cheese, jalapenos, and salsa."
+      },
+      {
+        "id": 21,
+        "name": "Cereal with Milk",
+        "category": "Breakfast",
+        "img": "https://example.com/cereal_milk.jpg",
+        "description": "Bowl of cereal served with cold milk for a quick and easy breakfast."
+      },
+      {
+        "id": 22,
+        "name": "Caesar Salad",
+        "category": "Lunch",
+        "img": "https://example.com/caesar_salad.jpg",
+        "description": "Romaine lettuce, croutons, Parmesan cheese, and Caesar dressing."
+      },
+      {
+        "id": 23,
+        "name": "Beef Burrito",
+        "category": "Lunch",
+        "img": "https://example.com/beef_burrito.jpg",
+        "description": "Flour tortilla filled with seasoned ground beef, rice, beans, and toppings."
+      },
+      {
+        "id": 24,
+        "name": "Butter Chicken",
+        "category": "Lunch",
+        "img": "https://example.com/butter_chicken.jpg",
+        "description": "Indian dish with chicken cooked in a creamy and spiced tomato-based sauce."
+      },
+      {
+        "id": 25,
+        "name": "Steak with Mashed Potatoes",
+        "category": "Dinner",
+        "img": "https://example.com/steak_mashed_potatoes.jpg",
+        "description": "Grilled steak paired with creamy mashed potatoes and a side of vegetables."
+      },
+      {
+        "id": 26,
+        "name": "Shrimp Scampi",
+        "category": "Dinner",
+        "img": "https://example.com/shrimp_scampi.jpg",
+        "description": "Sautéed shrimp in a garlic butter sauce, served over pasta or with crusty bread."
+      },
+      {
+        "id": 27,
+        "name": "Vegetable Curry",
+        "category": "Dinner",
+        "img": "https://example.com/vegetable_curry.jpg",
+        "description": "Flavorful curry made with an assortment of vegetables and aromatic spices."
+      },
+      {
+        "id": 28,
+        "name": "Hummus and Pita Bread",
+        "category": "Evening Snacks",
+        "img": "https://example.com/hummus_pita_bread.jpg",
+        "description": "Creamy hummus dip served with warm pita bread for dipping."
+      },
+      {
+        "id": 29,
+        "name": "Cheese Platter",
+        "category": "Evening Snacks",
+        "img": "https://example.com/cheese_platter.jpg",
+        "description": "Assortment of cheeses, such as cheddar, brie, and gouda, served with fruits and crackers."
+      },
+      {
+        "id": 30,
+        "name": "Caprese Skewers",
+        "category": "Evening Snacks",
+        "img": "https://example.com/caprese_skewers.jpg",
+        "description": "Skewers with cherry tomatoes, mozzarella cheese, and basil leaves drizzled with balsamic glaze."
+      },
+      {
+        "id": 31,
+        "name": "Omelette",
+        "category": "Breakfast",
+        "img": "https://example.com/omelette.jpg",
+        "description": "Fluffy omelette made with beaten eggs and filled with various ingredients like cheese, vegetables, or ham."
+      },
+      {
+        "id": 32,
+        "name": "Chicken Salad Sandwich",
+        "category": "Lunch",
+        "img": "https://example.com/chicken_salad_sandwich.jpg",
+        "description": "Chicken salad with mayonnaise, celery, and spices, served between slices of bread."
+      },
+      {
+        "id": 33,
+        "name": "Miso Soup",
+        "category": "Lunch",
+        "img": "https://example.com/miso_soup.jpg",
+        "description": "Traditional Japanese soup made with soybean paste, tofu, seaweed, and green onions."
+      },
+      {
+        "id": 34,
+        "name": "Beef Stir-Fry",
+        "category": "Lunch",
+        "img": "https://example.com/beef_stir_fry.jpg",
+        "description": "Sliced beef stir-fried with vegetables in a savory sauce, served over rice or noodles."
+      },
+      {
+        "id": 35,
+        "name": "Roasted Turkey",
+        "category": "Dinner",
+        "img": "https://example.com/roasted_turkey.jpg",
+        "description": "Whole turkey roasted to perfection, typically served during festive occasions."
+      },
+      {
+        "id": 36,
+        "name": "Baked Ziti",
+        "category": "Dinner",
+        "img": "https://example.com/baked_ziti.jpg",
+        "description": "Pasta dish with ziti noodles, marinara sauce, cheese, and baked until bubbly and golden."
+      },
+      {
+        "id": 37,
+        "name": "Stuffed Bell Peppers",
+        "category": "Dinner",
+        "img": "https://example.com/stuffed_bell_peppers.jpg",
+        "description": "Bell peppers stuffed with a mixture of ground meat, rice, and vegetables, baked until tender."
+      },
+      {
+        "id": 38,
+        "name": "Cheese Quesadilla",
+        "category": "Evening Snacks",
+        "img": "https://example.com/cheese_quesadilla.jpg",
+        "description": "Flour tortilla filled with melted cheese, grilled until crispy and served with salsa or guacamole."
+      },
+      {
+        "id": 39,
+        "name": "Fried Calamari",
+        "category": "Evening Snacks",
+        "img": "https://example.com/fried_calamari.jpg",
+        "description": "Deep-fried squid rings served with a dipping sauce, such as marinara or aioli."
+      },
+      {
+        "id": 40,
+        "name": "Fruit Smoothie",
+        "category": "Evening Snacks",
+        "img": "https://example.com/fruit_smoothie.jpg",
+        "description": "Blended beverage made with a mix of fruits, yogurt, and ice for a refreshing treat."
+      }
+    ]
+  }
+  

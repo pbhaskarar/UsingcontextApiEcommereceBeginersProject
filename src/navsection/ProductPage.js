@@ -1,75 +1,19 @@
-import {
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  Container,
-  Grid,
-  Typography,
-} from "@mui/material";
+import { Button, Card, CardActions, CardContent, Container, Grid, Typography} from "@mui/material";
 import React, { useContext } from "react";
 import { context } from "../context/AppContext";
 import DeleteRoundedIcon from "@mui/icons-material/DeleteRounded";
+import { Link } from "react-router-dom";
 
 const ProductPage = () => {
   const { cartItemsLength, cartItems, setCartItems } = useContext(context);
+ 
 
   const deleteHandle = (id) => {
     const UpdatedDelete = cartItems.filter((product) => product.id !== id);
     setCartItems(UpdatedDelete);
   };
 
-  // const handleChange = (product, action) => {
-  //   let ind = -1;
-  //   cartItems.forEach((data, index) => {
-  //     if (data.id === product.id) ind = index;
-  //   });
-  //   const tempArr = cartItems;
-  //   if (action === "+1") {
-  //     tempArr[ind]["count"] += 1;
-  //   }
-  //   if (action === "-1") {
-  //     tempArr[ind]["count"] -= 1;
-  //   }
-  //   if (tempArr[ind]["count"] === 0) tempArr[ind]["count"] = 1;
-  //   setCartItems([...tempArr]);
-  // };
-
-  // const handleChange = (product,d) =>{
-  //   console.log(product, d)
-  // }
-
-
-  // const handleChange = (product, action) => {
-  //   const updatedCartItems = cartItems.map((item) => {
-  //     if (item.id === product.id) {
-  //       if (action === "+1") {
-  //         return { ...item, count: item.count + 1 };
-  //       } else if (action === "-1") {
-  //         return { ...item, count: Math.max(item.count - 1, 1) };
-  //       }
-  //     }
-  //     return item;
-  //   });
-  
-  //   setCartItems(updatedCartItems);
-  // };
-
-  // const handleChange = (product, action) =>{
-  //   const updatedCartItems = cartItems.map((item) =>{
-  //     if(item.id === product.id){
-  //       if(action === "+1"){
-  //         return {...item, count: item.count +1 }
-  //         console.log(item)
-  //       }else if (action === "-1"){
-  //         return{...item, count: Math.max(-1,1)}
-  //       }
-  //     }
-  //     return item;
-  //   });
-  //   setCartItems(updatedCartItems);
-  //   console.log(updatedCartItems)
-  // };
+ 
   const handleChange = (product, action) => {
     const updatedCartItems = cartItems.map((item) => {
       if (item.id === product.id) {
@@ -91,6 +35,8 @@ const ProductPage = () => {
     (total, product) => total + Number(product.productPrice) * Number( product.count),
     0
   );
+
+ 
 
   return (
     <>
@@ -145,8 +91,8 @@ const ProductPage = () => {
                     >
                       <DeleteRoundedIcon sx={{ color: "red" }} />
                     </Button>
-                    <Typography variant="h5">{product.productPrice * product.count }</Typography>
                   </CardActions>
+                  <Typography variant="h5">{product.productPrice * product.count }</Typography>
                 </Card>
               </Grid>
             );
@@ -154,6 +100,7 @@ const ProductPage = () => {
         </Grid>
         <Grid >
           <Typography variant="h5" sx={{   alignItems: "center",   justifyContent: "center",   textAlign: "center",   margin: "2rem", }}>{`Total Price: ${totalAmount}`}</Typography>
+          <Button onClick={()=>{alert("Order Placed")}}><Link to='/NewProducts'></Link>PlaceOrder</Button>
         </Grid>
       </Container>
     </>

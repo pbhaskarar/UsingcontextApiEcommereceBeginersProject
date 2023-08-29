@@ -1,74 +1,57 @@
-import React, { useEffect, useState } from "react";
-import Products from "../components/Products.json";
-import {
-  Button,
-  Card,
-  CardActions,
-  CardContent,
-  Container,
-  Grid,
-  Typography,
-} from "@mui/material";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { Button } from '@mui/material';
 
+const MyComponent = () => {
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [search, setSearch] = useState('');
 
-const Home = () => {
-    const  [data, setData] = useState(Products);
+  const fetchData = async () => {
+    try {
+      const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
+      setData(response.data);
+      setIsLoading(false);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+      setIsLoading(false);
+    }
+  };
 
-    useEffect(()=>{
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-        //reterving data from  local storage
-        const ProductJsonData = localStorage.getItem('Products');
-        if(ProductJsonData){
-            setData(JSON.parse(ProductJsonData))
-        }else{
-            setData(Products)
-        }
-    },[])
+  const handleDelete = (postId) =>{
+    const deleteUser = data.filter((item) => item.id !== postId)
+    setData(deleteUser)
+  }
 
+  const handleChange = (e) =>{
+    setSearch(e.target.value)
+  }
 
-    // store the data  in locxal storage in whn ever it changes
-    useEffect(()=>{
-        localStorage.setItem("products",JSON.stringify(data))
-    },[data])
+  const searchData = data.filter((item) =>
+    item.title.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
-    <>
-      <Container>
-        <Typography
-          variant="h4"
-          sx={{
-            alignItems: "center",
-            justifyContent: "center",
-            textAlign: "center",
-            marginTop: "5rem",
-          }}
-        >
-          All Products
-        </Typography>
-      </Container>
-      <Grid container spacing={2}>
-        {Products.map((item) => {
-          return (
-            <Grid item xs={12} sm={6} md={4} key={item.id}>
-              <Card sx={{ minWidth: 275 }}>
-                <CardContent>
-                  <Typography variant="h5" component="div">
-                    {item.name}
-                  </Typography>
-                  <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                    {item.price}
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button variant="contained" size="small">Add to Cart</Button>
-                </CardActions>
-              </Card>
-            </Grid>
-          );
-        })}
-      </Grid>
-
-    </>
+    <div>
+      <input type='text' name='search' value={search} onChange={handleChange} />
+      {isLoading ? (
+        <p>Loading...</p>
+      ) : (
+        <ul>
+          {searchData.map((item) => (
+            <li key={item.id}>
+              {item.title}
+              <Button variant='outlined' onClick={() => handleDelete(item.id)}>delete</Button>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
   );
 };
 
-export default Home;
+export default MyComponent;
